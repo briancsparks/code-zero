@@ -3,6 +3,7 @@
 	"displayName": "code-zero",
 	"description": "My zero calorie extension",
 	"version": "0.0.1",
+	"publisher": "briancsparks",
 	"engines": {
 		"vscode": "^1.37.0"
 	},
@@ -10,14 +11,14 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.scratch"
+		"onCommand:extension.code_zero"
 	],
 	"main": "./extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.scratch",
-				"title": "BCS Scratch World"
+				"command": "extension.code_zero",
+				"title": "BCS Code-Zero"
 			}
 		]
 	},
@@ -34,5 +35,8 @@
 		"mocha": "^6.1.4",
 		"typescript": "^3.3.1",
 		"vscode-test": "^1.0.2"
+	},
+	"dependencies": {
+		"underscore": "^1.9.1"
 	}
 }
